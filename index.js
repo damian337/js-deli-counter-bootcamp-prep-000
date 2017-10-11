@@ -20,7 +20,7 @@ function currentLine(katzDeliLine) {
         var i = 0;
         var deliLine = "The line is currently:";
         while (i < katzDeliLine.length) {
-            deliLine.append(" " + `${i + 1}` + ". " + `${katzDeliLine[i]}` + ",");
+            deliLine = deliLine + (" " + `${i + 1}` + ". " + `${katzDeliLine[i]}` + ",");
             i++;
         }
         return deliLine
