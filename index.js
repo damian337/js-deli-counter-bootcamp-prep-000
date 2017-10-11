@@ -22,6 +22,9 @@ function currentLine(katzDeliLine) {
         while (i < katzDeliLine.length) {
             deliLine = deliLine + (" " + `${i + 1}` + ". " + `${katzDeliLine[i]}`);
             i++;
+            if (i < katzDeliLine.length - 1) {
+                deliLine = deliLine + ","
+            }
         }
         return deliLine
     }
